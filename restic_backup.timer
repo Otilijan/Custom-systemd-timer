@@ -1,0 +1,9 @@
+[Unit]
+Description=Run restic_backup.service 5min after boot
+
+[Timer]
+OnBootSec=5min
+Unit=restic_backup.service
+
+[Install]
+WantedBy=timers.target
